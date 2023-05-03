@@ -1,0 +1,90 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Banner from "../../componentes/Estrutura/Banner.astro";
+import ContainerBox from "../../componentes/Estrutura/ContainerBox";
+import TextoGrande from "../../componentes/Estrutura/Texto/TextoGrande";
+import TextoMedio from "../../componentes/Estrutura/Texto/TextoMedio";
+import TextoPequeno from "../../componentes/Estrutura/Texto/TextoPequeno";
+import TextoVermelho from "../../componentes/Estrutura/Texto/TextoVermelho";
+import Container from "../../componentes/Estrutura/Container.astro";
+import Downsell2 from "../../componentes/Botao/Downsell2.astro";
+---
+
+<Layout title="Programa D21">
+  <div>
+    <Banner negrito="Ultima chance..." texto="" />
+    <ContainerBox>
+      <br />
+      <img src="/downsell2/stop.png" alt="stop" />
+      <TextoGrande>ESPERE! VOU TE DAR UM DESCONTO EXCLUSIVO AGORA!</TextoGrande>
+      <br />
+      <TextoMedio>
+        Somente agora eu vou liberar o acesso ao programa Bumbum Perfeito junto
+        com o bônus gratuito que você viu na página anterior por apenas R$ 17...
+        <br />
+        <br />E ainda irei adicionar + 1 bônus exclusivo no seu pacote...
+      </TextoMedio>
+      <br />
+      <TextoPequeno>Muito bem, vou te explicar o quero dizer...</TextoPequeno>
+      <br />
+      <TextoMedio>
+        Somente agora nesta página e pela última vez vou reduzir o preço de todo
+        o pacote para apenas R$ 17!
+      </TextoMedio>
+      <br />
+      <TextoPequeno>
+        Então, você estará recebendo nesse pacote único e exclusivo um total de
+        3 programas incríveis no valor de R$ 414 por apenas R$ 17!
+        <br /><br />
+        O que significa que eu estou te oferecendo a oportunidade de levar cada um
+        desses cursos completos por um preço absurdamente pequeno...
+      </TextoPequeno>
+      <br />
+      <TextoMedio>Aproveite agora mesmo...</TextoMedio>
+      <br />
+      <TextoPequeno>
+        Bumbum Perfeito <strong><s>R$400</s></strong>
+        <br />
+        Adeus Estrias <strong><s>R$147</s></strong>
+        <br />
+        Detox Imediato <strong><s>R$53</s></strong>
+      </TextoPequeno>
+      <TextoVermelho>
+        Total: <strong><s>R$ 600</s></strong>
+      </TextoVermelho>
+      <img src="/downsell2/downsell2.png" width="200" alt="" />
+      <br />
+      <TextoPequeno>
+        Essa é a sua <strong>ÚLTIMA OPORTUNIDADE…</strong>
+        <br />
+        <br />
+        Clique no botão laranja abaixo e adicione esse combo ao seu pacote agora,
+        você ficará muito feliz por ter feito isso…
+      </TextoPequeno>
+      <div id="oferta">
+        <Container>
+          <Downsell2 />
+        </Container>
+      </div>
+      <img src="/segura.png" width="300" alt="" />
+      <br />
+    </ContainerBox>
+  </div>
+</Layout>
+
+<style>
+  .desconto-vermelho {
+    color: #e43b2c;
+  }
+
+  .preco {
+    color: #61ce70;
+  }
+
+  .titulo-desconto {
+    font-size: 25px;
+    font-weight: 700;
+    color: #2f2f2f;
+    width: 80%;
+  }
+</style>

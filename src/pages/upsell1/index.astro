@@ -1,0 +1,81 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Banner from "../../componentes/Estrutura/Banner.astro";
+import TextoGrande from "../../componentes/Estrutura/Texto/TextoGrande";
+import TextoMedio from "../../componentes/Estrutura/Texto/TextoMedio";
+import TextoPequeno from "../../componentes/Estrutura/Texto/TextoPequeno";
+import TextoVermelho from "../../componentes/Estrutura/Texto/TextoVermelho";
+import Container from "../../componentes/Estrutura/Container.astro";
+import VSL from "../../componentes/VSL/Upsell1.astro";
+---
+
+<Layout title="Programa D21">
+  <div
+    style={{
+      textAlign: "center",
+      display: "block",
+      justifyContent: "center",
+      alignItems: "center",
+      width: "100%",
+    }}
+  >
+    <Banner
+      negrito="ETAPA 1 de 2: "
+      texto="Atenção, não feche ou atualize essa página, isso pode gerar erros na sua compra!"
+    />
+    <br />
+    <TextoGrande>ESPERE!</TextoGrande>
+    <br />
+    <TextoMedio>
+      VOCE JÁ TEM ACESSO AO PROTOCOLO ZERO BARRIGA MAS A SUA COMPRA AINDA NÃO
+      ESTÁ 100% CONCLUÍDA...
+    </TextoMedio>
+    <br />
+    <TextoPequeno>
+      Você provavelmente só irá ver essa página uma única vez (para sempre),
+      veja esse vídeo abaixo com muito cuidado. É realmente muito importante...
+    </TextoPequeno>
+    <div id="oferta">
+      <Container>
+        <VSL />
+      </Container>
+    </div>
+    <TextoPequeno>
+      Programa bumbum perfeito{" "}
+      <strong>
+        <s>R$400</s>
+      </strong>
+      <br />
+      Adeus estrias{" "}
+      <strong>
+        <s>R$147</s>
+      </strong>
+    </TextoPequeno>
+    <TextoVermelho>
+      Total:{" "}
+      <strong>
+        <s>R$ 547</s>
+      </strong>
+    </TextoVermelho>
+    <img src="/upsell1/upsell1.png" width="200" alt="" />
+    <br />
+    <br />
+  </div>
+</Layout>
+
+<style>
+  .desconto-vermelho {
+    color: #e43b2c;
+  }
+
+  .preco {
+    color: #61ce70;
+  }
+
+  .titulo-desconto {
+    font-size: 25px;
+    font-weight: 700;
+    color: #2f2f2f;
+    width: 80%;
+  }
+</style>

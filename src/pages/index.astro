@@ -1,0 +1,95 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Banner from "../componentes/Estrutura/Banner.astro";
+import Headline from "../componentes/Headline.astro";
+import Banner1 from "../componentes/Banner1";
+import Garantia from "../componentes/Garantia.jsx";
+import VSLPlayer from "../componentes/Estrutura/Container.astro";
+import ResumoDaOferta from "../componentes/ResumoDaOferta";
+import Bonus from "../componentes/Bonus";
+import HeadlineVerde from "../componentes/Estrutura/Texto/SubtituloVerde";
+import Imagem from "../componentes/Estrutura/Imagem.astro";
+import FAQ from "../componentes/FAQ.astro";
+import Checkout from "../componentes/Botao/BotaoVerde";
+import AncoragemDePreco from "../componentes/AncoragemDePreco";
+import VSL from "../componentes/VSL/VSL.astro";
+import Depoimento1 from "../componentes/Depoimentos/Depoimento1.astro";
+import Depoimento2 from "../componentes/Depoimentos/Depoimento2.astro";
+import Depoimento3 from "../componentes/Depoimentos/Depoimento3.astro";
+import Depoimento4 from "../componentes/Depoimentos/Depoimento4.astro";
+import Depoimento5 from "../componentes/Depoimentos/Depoimento5.astro";
+import Depoimento6 from "../componentes/Depoimentos/Depoimento6.astro";
+import Depoimento7 from "../componentes/Depoimentos/Depoimento7.astro";
+import PlayerDepoimento from "../componentes/Estrutura/ContainerDepoimento.astro";
+---
+
+<Layout title="Programa D21">
+  <div>
+    <Banner
+      negrito="Atenção: "
+      texto=" Essa página possui uma oferta exclusiva"
+    />
+    <Headline
+      texto="MÉTODO SECRETO REVELADO POR UM DOUTOR AMERICANO MOSTRA COMO QUEIMAR DE GORDURA DE FORMA AUTOMÁTICA"
+    />
+    <VSLPlayer>
+      <VSL />
+    </VSLPlayer>
+    <Banner1 />
+    <br />
+    <HeadlineVerde texto={"Aqui está tudo o que você receberá..."} />
+    <br />
+    <ResumoDaOferta />
+    <br />
+    <Bonus />
+    <br />
+    <AncoragemDePreco />
+    <br />
+    <Checkout
+      texto={"SIM! EU QUERO EMAGRECER"}
+      link={"https://checkout.payt.com.br/44885837c518b06e3f98b41ab8cedc0f"}
+    />
+    <br />
+    <HeadlineVerde texto={"Será que isso realmente funciona?"} />
+    <HeadlineVerde texto={"Veja depoimentos reais de pessoas reais..."} />
+    <br />
+    <PlayerDepoimento>
+      <Depoimento1 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento2 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento3 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento4 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento5 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento6 />
+    </PlayerDepoimento>
+    <PlayerDepoimento>
+      <Depoimento7 />
+    </PlayerDepoimento>
+    <!-- imagem deve estar na pasta public -->
+    <Imagem nome="depoimento.jpeg" />
+    <br />
+    <Garantia />
+    <br />
+    <br />
+    <Checkout
+      texto={"QUERO O PROTOCOLO PARA SECAR"}
+      link={"https://checkout.payt.com.br/44885837c518b06e3f98b41ab8cedc0f"}
+    />
+    <br />
+    <FAQ />
+    <Checkout
+      texto={"QUERO O PROTOCOLO PARA SECAR"}
+      link={"https://checkout.payt.com.br/44885837c518b06e3f98b41ab8cedc0f"}
+    />
+    <br />
+  </div>
+</Layout>

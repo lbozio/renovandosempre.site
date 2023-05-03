@@ -1,0 +1,33 @@
+---
+export interface Props {
+  texto: string;
+}
+
+const { texto } = Astro.props;
+---
+
+<div><a>{texto}</a></div>
+
+<style>
+  div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    width: 80%;
+  }
+
+  @media (min-width: 600px) {
+    a {
+      font-size: 26px;
+    }
+  }
+</style>

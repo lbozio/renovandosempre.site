@@ -1,0 +1,28 @@
+---
+export interface Props {
+  nome: string;
+}
+
+const { nome } = Astro.props;
+---
+
+<div>
+  <img src={`/${nome}`} alt="Descrição da imagem" />
+</div>
+
+<style>
+  div {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  img {
+    width: 80%;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      width: 30%;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+<section class="hero py-lg-2 py-sm-2 right px-lg-15 px-sm-1">
+  <div class="mt-lg-5 mt-sm-3 mx-auto center max-w-lg-60">
+    <slot />
+  </div>
+</section>
+<style>
+  @media (min-width: 600px) {
+    .mt-lg-5 {
+      margin-top: 5vh;
+    }
+    .mt-sm-3 {
+      margin-top: 3vh;
+    }
+    .hero {
+      height: fit-content !important;
+    }
+  }
+  .mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .center {
+    text-align: center;
+  }
+  @media (min-width: 600px) {
+    .max-w-lg-60 {
+      max-width: 90%;
+    }
+    .py-lg-2 {
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+    }
+    .px-lg-15 {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  }
+  .hero {
+    min-height: fit-content !important;
+  }
+
+  @media (max-width: 600px) {
+    .py-sm-2 {
+      padding-bottom: 2vh;
+      padding-top: 2vh;
+    }
+    .hero {
+      height: fit-content !important;
+    }
+    .px-sm-1 {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+  section {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+</style>

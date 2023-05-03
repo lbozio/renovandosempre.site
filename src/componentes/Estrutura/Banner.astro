@@ -1,0 +1,35 @@
+---
+export interface Props {
+  negrito: string;
+  texto: string;
+}
+
+const { negrito, texto } = Astro.props;
+---
+
+<div class="banner">
+  <span class="text-banner"><strong>{negrito}</strong>{texto}</span>
+</div>
+
+<style>
+  .banner {
+    color: white;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+  }
+  .text-banner {
+    width: 90%;
+    padding-left: 3%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+  }
+</style>

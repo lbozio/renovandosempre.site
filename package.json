@@ -1,0 +1,28 @@
+{
+  "name": "violet-visual",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.1.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@frontendista/astro-html-minify": "^1.0.7",
+    "@mui/material": "^5.12.1",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "astro": "^2.3.1",
+    "astro-compress": "^1.1.42",
+    "astro-compressor": "^0.4.0",
+    "astro-google-fonts-optimizer": "^0.2.2",
+    "astro-purgecss": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

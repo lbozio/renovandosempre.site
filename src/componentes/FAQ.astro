@@ -1,0 +1,128 @@
+<div
+  style={{
+    textAlign: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    width: "100%",
+  }}
+>
+  <div
+    style={{
+      width: "80%",
+    }}
+  >
+    <br />
+    <h2>Perguntas frequentes</h2>
+    <ul>
+      <li>
+        <h3 class="question">Como vou acessar o Protocolo?</h3>
+        <p class="answer">
+          O acesso chegará ao seu e-mail logo após a compra do Protocolo Zero Barriga.
+        </p>
+      </li>
+      <li>
+        <h3 class="question">Como funciona o método?</h3>
+        <p class="answer">
+          Você irá receber um livro ensinando o passo a passo do ritual matinal que irá ativar a queima de gordura
+          automática no seu corpo 24 horas por dia. Além de receber um acesso único e especial ao nosso nutricionista particular.
+        </p>
+      </li>
+      <li>
+        <h3 class="question">
+          Existe alguma garantia de que esse Protocolo funciona?
+        </h3>
+        <p class="answer">
+          Se você não tiver certeza se o Protocolo é ou não pra você, não tem
+          problema. Nós acreditamos tanto no nosso método que damos a você uma garantia
+          de 90 dias. Se dentro desse período você não ver ou sentir QUALQUER
+          resultado, basta nos enviar um e-mail e devolveremos
+          100% do seu investimento. Simples assim 🙂
+        </p>
+      </li>
+      <li>
+        <h3 class="question">Em quanto tempo posso perder peso?</h3>
+        <p class="answer">
+          A partir de 1 semana algumas alunas já relataram seus resultados,
+          enquanto algumas relataram após 30 dias aplicando o manual.
+        </p>
+      </li>
+      <li>
+        <h3 class="question">A forma de pagamento é segura?</h3>
+        <p class="answer">
+          Sim, a forma de pagamento é através de uma das melhores plataformas de
+          pagamentos do Brasil. Sua compra está 100% garantida e segura.
+        </p>
+      </li>
+      <li>
+        <h3 class="question">Como posso comprar?</h3>
+        <p class="answer">
+          Clique no botão abaixo e realize sua inscrição. Você pode comprar
+          somente aqui no site oficial. Todo o processo de compra é 100% seguro,
+          criptografado e protegido pelas melhores e mais novas tecnologias do
+          mercado.
+        </p>
+      </li>
+    </ul>
+    <br />
+    <br />
+  </div>
+</div>
+
+<script>
+  const questions = document.querySelectorAll(".question");
+  questions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const answer = question.nextElementSibling;
+      answer.classList.toggle("show");
+    });
+  });
+</script>
+
+<style>
+  .question {
+    cursor: pointer;
+  }
+
+  .answer {
+    display: none;
+  }
+
+  .answer.show {
+    display: block;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 20px;
+    list-style-type: none;
+    color: "#242424";
+  }
+
+  h2 {
+    color: #4f9a68;
+    font-weight: 800;
+    color: "#242424";
+  }
+
+  p {
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  @media (min-width: 600px) {
+    ul {
+      margin-left: 400px;
+    }
+  }
+
+  h3 {
+    text-align: left;
+    font-weight: 600;
+    color: "#242424";
+  }
+</style>
